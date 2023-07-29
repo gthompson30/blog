@@ -75,18 +75,18 @@ The problem with an equal tempered scale is that the ratios of intervals tend to
 
 By pure coincidence, a 12-tone equal tempered system does an incredibly good job at this. In a 12TET system, you have access to the following pitch intervals:
 
-$2^{1/12} \approx 1.05946$
-$2^{2/12} \approx 1.12246$
-$2^{3/12} \approx 1.18921$ (close to 6/5 = 1.2)
-$2^{4/12} \approx 1.25992$ (close to 5/4 = 1.25)
-$2^{5/12} \approx 1.33484$ (very close to 4/3 = 1.333...)
-$2^{6/12} \approx 1.41421$
-$2^{7/12} \approx 1.49831$ (very close to 3/2 = 1.5)
-$2^{8/12} \approx 1.58740$
-$2^{9/12} \approx 1.68179$ (close to 5/3 = 1.666...)
-$2^{10/12} \approx 1.78180$
-$2^{11/12} \approx 1.88775$
-$2^{12/12} = 2$ (octave)
+$2^{1/12} \approx 1.05946$\
+$2^{2/12} \approx 1.12246$\
+$2^{3/12} \approx 1.18921$ (close to 6/5 = 1.2)\
+$2^{4/12} \approx 1.25992$ (close to 5/4 = 1.25)\
+$2^{5/12} \approx 1.33484$ (very close to 4/3 = 1.333...)\
+$2^{6/12} \approx 1.41421$\
+$2^{7/12} \approx 1.49831$ (very close to 3/2 = 1.5)\
+$2^{8/12} \approx 1.58740$\
+$2^{9/12} \approx 1.68179$ (close to 5/3 = 1.666...)\
+$2^{10/12} \approx 1.78180$\
+$2^{11/12} \approx 1.88775$\
+$2^{12/12} = 2$ (octave)\
 
 This is the tuning system used by almost all instruments today. Any time that you've heard a perfect fifth, you actually weren't hearing a 1.5:1 ratio but rather a 1.498:1 ratio.
 
