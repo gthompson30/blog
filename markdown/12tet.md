@@ -86,7 +86,7 @@ $2^{8/12} \approx 1.58740$\
 $2^{9/12} \approx 1.68179$ (close to 5/3 = 1.666...)\
 $2^{10/12} \approx 1.78180$\
 $2^{11/12} \approx 1.88775$\
-$2^{12/12} = 2$ (octave)\
+$2^{12/12} = 2$ (octave)
 
 This is the tuning system used by almost all instruments today. Any time that you've heard a perfect fifth, you actually weren't hearing a 1.5:1 ratio but rather a 1.498:1 ratio.
 
