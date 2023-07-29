@@ -22,7 +22,10 @@ To the listener, the resulting pitch won't sound quite like a 330 Hz wave, nor w
 
 So what does the combination of these two frequencies sound like? The following audio clip plays first the 330 Hz wave for 1 second, then the 660 Hz wave for 1 second, and then both frequencies simultaneously for 1 second.
 
-[audio snippet for tone1.wav]
+<audio controls>
+  <source src="../assets/12tet/tone1.wav" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
 
 The two notes sound harmonious together (or as music theorists would say, "consonant") -- so much so that they sound almost like one note when played simultaneously. Let's look at another example of adding two frequencies together. However, instead of the frequency ratio being 1:2, we'll try 1:1.3 (in this case, 330 Hz and 429 Hz).
 
