@@ -28,7 +28,7 @@ The two notes sound harmonious together (or as music theorists would say, "conso
 
 <a href="https://www.gabe.biz/blog/assets/12tet/tone2.wav">Audio Link</a>
 
-These notes sound much worse and more out-of-tune. What's going on here? Clearly, this pitch interval sounds a lot "worse" than the 1:2 ratio. But why? We get some insight into this if we look at its waveform:
+These notes sound much more "out-of-tune". What's going on here? Clearly, this pitch interval sounds a lot "worse" than the 1:2 ratio. But why? We get some insight into this if we look at its waveform:
 
 ![](https://i.ibb.co/ZMjF1rq/graph3.png)
 *(note: I've changed the x-axis scale here from the previous graph to show more periods)*
