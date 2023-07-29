@@ -14,7 +14,7 @@ Not all real-world pitches are perfect sine waves (most aren't) but all real-wor
 
 Because of evolution, our ears are really good at being able to identify oscillations in a sound wave (it was evolutionarily advantageous for your ancestors to be able to tell if the loud sound coming from nearby their cave originated from a large mammoth or a small rabbit's vocal chords). Typical humans can recognize notes as low as 20 Hz and as high as 20,000 Hz, although most music falls in the 100 Hz to 1,500 Hz range.
 
-The properties of sound waves become a lot more interesting when you consider multiple waves played simultaneously. If two different frequencies are being played at the same time, the sound wave perceived by a listener is the sum of the two component graphs. For example, if the frequencies 330 Hz (roughly an E4) and 660 Hz (roughly an E5) are being played, the resulting time-air pressure graph would look something like $`\sin{(330 * 2x\pi)} + \sin{(660 * 2x\pi)}`$, where $x$ is the number of seconds elapsed (the $2\pi$ is to scale the wavelength so that 330 or 660 periods fit into $1$ second, rather than $2\pi$ seconds). On a graph, this would look like:
+The properties of sound waves become a lot more interesting when you consider multiple waves played simultaneously. If two different frequencies are being played at the same time, the sound wave perceived by a listener is the sum of the two component graphs. For example, if the frequencies 330 Hz (roughly an E4) and 660 Hz (roughly an E5) are being played, the resulting time-air pressure graph would look something like <img src="https://latex.codecogs.com/gif.latex?O_t=\sin{(330 * 2x\pi)} + \sin{(660 * 2x\pi)}" />, where <img src="https://latex.codecogs.com/gif.latex?O_t=x" /> is the number of seconds elapsed (the <img src="https://latex.codecogs.com/gif.latex?O_t=2\pi" /> is to scale the wavelength so that 330 or 660 periods fit into <img src="https://latex.codecogs.com/gif.latex?O_t=1" /> second, rather than <img src="https://latex.codecogs.com/gif.latex?O_t=2\pi" /> seconds). On a graph, this would look like:
 
 ![](https://i.ibb.co/886QVJb/graph2.png)
 
@@ -69,24 +69,24 @@ This is pretty cool -- now you're able to play any of the intervals we discussed
 
 The reason for this is that our scale isn't "equal-tempered", which is another way of saying that the ratios between each of the adjacent notes aren't equal. As a result of this, it's not always possible to transpose a chord or a melody (such as transposing the major root chord up a fifth) because the gaps are uneven. Another related problem is that our instrument is stuck in one key, so all music played on it would have to be based around the root frequency 330 Hz. This is very musically limiting.
 
-A solution to this problem is to use an equal-tempered system, where the ratio between each note of our scale is equal. For example, a 4-tone equal temperament (a.k.a. 4TET) system would contain four evenly spaced notes per octave (important note: by "evenly spaced" I mean geometrically not arithmetically, so the *ratio* rather than the *difference* between the frequencies of adjacent notes is equal). In our 4TET system, we'll call the frequency ratio between adjacent notes $r$. For our purposes, $r^4$ must equal $2$, so $r = 2^{1/4} \approx 1.1892$. More generally, for any $n$-TET system, the ratio between adjacent notes will be $2^{1/n}$.
+A solution to this problem is to use an equal-tempered system, where the ratio between each note of our scale is equal. For example, a 4-tone equal temperament (a.k.a. 4TET) system would contain four evenly spaced notes per octave (important note: by "evenly spaced" I mean geometrically not arithmetically, so the *ratio* rather than the *difference* between the frequencies of adjacent notes is equal). In our 4TET system, we'll call the frequency ratio between adjacent notes <img src="https://latex.codecogs.com/gif.latex?O_t=r" />. For our purposes, <img src="https://latex.codecogs.com/gif.latex?O_t=r^4" /> must equal <img src="https://latex.codecogs.com/gif.latex?O_t=2" />, so <img src="https://latex.codecogs.com/gif.latex?O_t=r = 2^{1/4} \approx 1.1892" />. More generally, for any <img src="https://latex.codecogs.com/gif.latex?O_t=n" />-TET system, the ratio between adjacent notes will be <img src="https://latex.codecogs.com/gif.latex?O_t=2^{1/n}" />.
 
 The problem with an equal tempered scale is that the ratios of intervals tend to be very irrational, making most equal tempered scales sound very bad. An ideal equal tempered scale would be able to form intervals that closely approximate the clean pitch ratios of our instrument above (6:5, 5:4, 4:3, 3:2, 5:3, 2:1), even if they aren't exactly right. That way, it would be to change keys and transpose chords and melodies, while still having consonant intervals.
 
 By pure coincidence, a 12-tone equal tempered system does an incredibly good job at this. In a 12TET system, you have access to the following pitch intervals:
 
-$2^{1/12} \approx 1.05946$\
-$2^{2/12} \approx 1.12246$\
-$2^{3/12} \approx 1.18921$ (close to 6/5 = 1.2)\
-$2^{4/12} \approx 1.25992$ (close to 5/4 = 1.25)\
-$2^{5/12} \approx 1.33484$ (very close to 4/3 = 1.333...)\
-$2^{6/12} \approx 1.41421$\
-$2^{7/12} \approx 1.49831$ (very close to 3/2 = 1.5)\
-$2^{8/12} \approx 1.58740$\
-$2^{9/12} \approx 1.68179$ (close to 5/3 = 1.666...)\
-$2^{10/12} \approx 1.78180$\
-$2^{11/12} \approx 1.88775$\
-$2^{12/12} = 2$ (octave)
+<img src="https://latex.codecogs.com/gif.latex?O_t=2^{1/12} \approx 1.05946" />\
+<img src="https://latex.codecogs.com/gif.latex?O_t=2^{2/12} \approx 1.12246" />\
+<img src="https://latex.codecogs.com/gif.latex?O_t=2^{3/12} \approx 1.18921" /> (close to 6/5 = 1.2)\
+<img src="https://latex.codecogs.com/gif.latex?O_t=2^{4/12} \approx 1.25992" /> (close to 5/4 = 1.25)\
+<img src="https://latex.codecogs.com/gif.latex?O_t=2^{5/12} \approx 1.33484" /> (very close to 4/3 = 1.333...)\
+<img src="https://latex.codecogs.com/gif.latex?O_t=2^{6/12} \approx 1.41421" />\
+<img src="https://latex.codecogs.com/gif.latex?O_t=2^{7/12} \approx 1.49831" /> (very close to 3/2 = 1.5)\
+<img src="https://latex.codecogs.com/gif.latex?O_t=2^{8/12} \approx 1.58740" />\
+<img src="https://latex.codecogs.com/gif.latex?O_t=2^{9/12} \approx 1.68179" /> (close to 5/3 = 1.666...)\
+<img src="https://latex.codecogs.com/gif.latex?O_t=2^{10/12} \approx 1.78180" />\
+<img src="https://latex.codecogs.com/gif.latex?O_t=2^{11/12} \approx 1.88775" />\
+<img src="https://latex.codecogs.com/gif.latex?O_t=2^{12/12} = 2" /> (octave)
 
 This is the tuning system used by almost all instruments today. Any time that you've heard a perfect fifth, you actually weren't hearing a 1.5:1 ratio but rather a 1.498:1 ratio.
 
@@ -100,6 +100,6 @@ This is because the 6:5 (or 1.2:1) ratio is slightly sharp of the 1.189:1 minor 
 
 As a result of creating an equal-tempered system to approximate the consonant intervals, a lot of dissonant intervals are added to our scale to fill in space. The minor 2nd, major 2nd, tritone, minor 7th, and major 7th all sound dissonant. The minor 6th also sounds dissonant in isolation, although it can sound major in certain contexts because it's an inversion of a major third. This is why some of the notes in the 12TET system sound "good" and why others sound "bad" -- the 12-tone equal temperament system wasn't *designed* to have a tritone or a minor second, but it was impossible to allow for the consonant intervals without keeping the dissonant ones.
 
-Although 12-tone equal temperament is by far the most common scale used in the West, it's not the only one. Defenders of "[53-tone equal temperament](https://en.wikipedia.org/wiki/53_equal_temperament)" argue that including 53 equally spaced notes in a scale instead of 12 gives you better approximations of the consonant intervals. 53TET knocks 12TET's perfect fifth approximation out of the park, with 31 semitones giving a $2^{31/53} \approx 1.499941:1$ ratio, much better than $1.498:1$. 53TET also approximates a major third as 17 semitones, or a $2^{17/53} \approx 1.248984:1$ and a minor third as $2^{14/53} \approx 1.200929:1$.
+Although 12-tone equal temperament is by far the most common scale used in the West, it's not the only one. Defenders of "[53-tone equal temperament](https://en.wikipedia.org/wiki/53_equal_temperament)" argue that including 53 equally spaced notes in a scale instead of 12 gives you better approximations of the consonant intervals. 53TET knocks 12TET's perfect fifth approximation out of the park, with 31 semitones giving a <img src="https://latex.codecogs.com/gif.latex?O_t=2^{31/53} \approx 1.499941:1" /> ratio, much better than <img src="https://latex.codecogs.com/gif.latex?O_t=1.498:1" />. 53TET also approximates a major third as 17 semitones, or a <img src="https://latex.codecogs.com/gif.latex?O_t=2^{17/53} \approx 1.248984:1" /> and a minor third as <img src="https://latex.codecogs.com/gif.latex?O_t=2^{14/53} \approx 1.200929:1" />.
 
 53-tone equal temperament has yet to catch on in mainstream music. Although it does approximate the consonant ratios much better than 12TET, it adds dozens of unpleasant intervals into the octave. As you might imagine, this makes it very challenging for a musician to decide which of 53 notes in an octave to play. It also requires pianos and other instruments to change their layouts to allow for 53 notes per octave, which makes most instruments bulky and hard to use. But [that's hasn't stopped people](https://www.youtube.com/watch?v=vTEBdMfmPL0) from creating microtonal instruments themselves!
