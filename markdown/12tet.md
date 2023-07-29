@@ -22,11 +22,11 @@ To the listener, the resulting pitch won't sound quite like a 330 Hz wave, nor w
 
 So what does the combination of these two frequencies sound like? The following audio clip plays first the 330 Hz wave for 1 second, then the 660 Hz wave for 1 second, and then both frequencies simultaneously for 1 second.
 
-<a href="../assets/12tet/tone1.wav">Audio Link</a>
+<a href="https://www.gabe.biz/blog/assets/12tet/tone1.wav">Audio Link</a>
 
 The two notes sound harmonious together (or as music theorists would say, "consonant") -- so much so that they sound almost like one note when played simultaneously. Let's look at another example of adding two frequencies together. However, instead of the frequency ratio being 1:2, we'll try 1:1.3 (in this case, 330 Hz and 429 Hz).
 
-<a href="../assets/12tet/tone2.wav">Audio Link</a>
+<a href="https://www.gabe.biz/blog/assets/12tet/tone2.wav">Audio Link</a>
 
 These notes sound much worse and more out-of-tune. What's going on here? Clearly, this pitch interval sounds a lot "worse" than the 1:2 ratio. But why? We get some insight into this if we look at its waveform:
 
@@ -39,7 +39,7 @@ The bottom line is that harmonies that have more easily identifiable oscillation
 
 What other frequency ratios would sound good? A 3:2 ratio (330 Hz and 495 Hz in this case) would, because just like a 2:1 harmony, it's a simple integer ratio. Take a listen:
 
-<a href="../assets/12tet/tone3.wav">Audio Link</a>
+<a href="https://www.gabe.biz/blog/assets/12tet/tone3.wav">Audio Link</a>
 
 If you have any background in music theory, you'll immediately recognize that interval as a [perfect fifth](https://en.wikipedia.org/wiki/Perfect_fifth). You might've also recognized the pervious 2:1 ratio as an octave. Much like the octave, the perfect fifth also sounds very stable. Here's its waveform:
 
@@ -47,19 +47,19 @@ If you have any background in music theory, you'll immediately recognize that in
 
 We can clearly see a pattern repeating every 0.006 seconds or so. Let's take a look at another simple integer ratio, 4:3 (330 Hz and 440 Hz in this case):
 
-<a href="../assets/12tet/tone4.wav">Audio Link</a>
+<a href="https://www.gabe.biz/blog/assets/12tet/tone4.wav">Audio Link</a>
 
 This is another recognizable interval -- it's a [perfect fourth](https://en.wikipedia.org/wiki/Perfect_fourth). By choosing simple pitch ratios, we seem to be rediscovering the most fundamental pitch intervals in Western music. This is not a coincidence, and it isn't isolated to just perfect fifth and perfect fourths. For example, here's what a 5:4 pitch ratio sounds like:
 
-<a href="../assets/12tet/tone5.wav">Audio Link</a>
+<a href="https://www.gabe.biz/blog/assets/12tet/tone5.wav">Audio Link</a>
 
 This a [major third](https://en.wikipedia.org/wiki/Major_third). If we look at a 5:3 ratio, we get:
 
-<a href="../assets/12tet/tone6.wav">Audio Link</a>
+<a href="https://www.gabe.biz/blog/assets/12tet/tone6.wav">Audio Link</a>
 
 This one is a bit less obvious, but it is actually a [major sixth](https://en.wikipedia.org/wiki/Major_sixth). And if we look at a 6:5 ratio, we get:
 
-<a href="../assets/12tet/tone7.wav">Audio Link</a>
+<a href="https://www.gabe.biz/blog/assets/12tet/tone7.wav">Audio Link</a>
 
 ... a minor third. If you're a musician living in an ancient society before harmony was discovered and you were the first person to discover that these intervals sound good, the next logical step would be to create an instrument to allows you to play all of them. Imagine you have a magical strip of tape that allows you to play any pitch on it within the span of an octave by pressing some position on the tape, where pitches on the right are higher and pitches on the left are lower (kind of like a piano). You can create marks on the instrument to notate which pitches you want to include in your "scale". The instrument might look something like this:
 
@@ -94,7 +94,7 @@ Although 12TET does compromise accuracy on some of the intervals (especially the
 
 Earlier in this blog post, when I played the 5:4 and 6:5 pitch ratios, some of you might've actually noticed that they sounded slightly out-of-tune (here's a the 6:5 again):
 
-<a href="../assets/12tet/tone7.wav">Audio Link</a>
+<a href="https://www.gabe.biz/blog/assets/12tet/tone7.wav">Audio Link</a>
 
 This is because the 6:5 (or 1.2:1) ratio is slightly sharp of the 1.189:1 minor third you're probably used to hearing. Although the 6:5 is technically a more "pure" ratio than the 12TET approximation, most people get so used to the approximation that the clean ratio version of the minor third sounds out-of-tune to them.
 
