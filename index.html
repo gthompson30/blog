@@ -26,19 +26,19 @@
 	<div style="width: 20vw; height: 55vh; float: right;" class="show">
 		<div class="content">
 			<br>
-			<h2 id="title"> Gabriel Thompson's Personal Blog </h2>
+			<h2 id="title"> <a href="" style="text-decoration: none; color: inherit;">Gabriel Thompson's Personal Blog</a> </h2>
 			<hr style="width: 70%; margin-left: 30px;">
-			<h3 style="font-family: 'Arial', serif;"> Recent posts </h3>
+			<h3 style="font-family: 'Arial', serif;"> Recent posts <span style="font-size: 10px;"><a href="articles/">Archive</a></span> </h3>
 			<p> <a href="#12tet">Why Music Has 12 Notes </a></p>
-			<p> <a href="#mandelbrot">Why the mandelbrot set is very cool </a></p>
-			<p> <a href="#hashing">Long passwords are good, actually </a></p>
+			<p> <a href="#mandelbrot">Why the Mandelbrot Set is Very Cool </a></p>
+			<p> <a href="#hashing">Long Passwords are Good, Actually </a></p>
 		</div>
 	</div>
 	<div style="width: 20vw; height: 5vh;">
 	</div>
         <div style="width: 20vw;" class="show">
                 <div class="content">
-                        <h4> Follow me: <a href="https://github.com/sonofthomp">GitHub</a> - <a href="https://twitter.com/TheSon_Of_Thomp">Twitter</a> - <a href="https://www.instagram.com/the.son.of.thomp/">Instagram</a> - <a href="https://www.linkedin.com/in/gabriel-thompson-5238341b7/" title="Last and most certainly least">LinkedIn</a></h4>
+                        <h4> Follow me: <a href="https://github.com/sonofthomp">GitHub</a> - <a href="https://www.threads.net/@the.son.of.thomp">Threads</a> - <a href="https://www.instagram.com/the.son.of.thomp/">Instagram</a> - <a href="https://www.linkedin.com/in/gabriel-thompson-5238341b7/" title="Last and most certainly least">LinkedIn</a></h4>
                 </div>
         </div>
 </div>
@@ -49,20 +49,21 @@
 		<div class="content" style="width: 47.5vw">
 			<h1> Hello there! </h1>
 			<h4> Welcome to my blog. Here, I write about anything that I find interesting. This spans quite a few topics, but is mostly computer science and/or math-related because I am a nerd. Enjoy! -Gabriel</h4>
+			<h4>You can find an archive of my articles <a href="articles/">here</a>.</h4>
 			<h4> My latest posts are below: </h4>
 			<hr>
 
-			<h1> <a id="12tet"> Why Music Has 12 Notes </a> </h1>
+			<h1> <a id="12tet"> Why Music Has 12 Notes </a> <span style="font-size: 10px;"><a href="articles/why-music-has-12-notes/">View as article</a></span> </h1>
 			<h4> <i>The mathematical basis for 12-tone equal temperament</i></h4>
 			<h3> By Gabriel Thompson <span style="font-size: 10px;">July 31, 2023</span> </h3>
-			<img src="assets/12tet/top_diagram.png" style="width: 40vw;"></img>
+			<img src="articles/why-music-has-12-notes/images/top_diagram.png" style="width: 40vw;"></img>
 			<p style="font-size: 11px;">Image credit: https://commons.wikimedia.org/wiki/File:Equal_Temper_w_limits.svg</p>
 
 			<p>Last year, I took the course "AP Music Theory" at my school, which covers the same material as a college-level introductory harmony course. I learned a lot in the course about writing and analyzing 18th-century four-part harmonies (really interesting stuff (that's not sarcastic)), all of which was based upon the premise the idea that music is made up of twelve notes. However, the course never proved this premise, or even really addressed it. Isn't it ridiculous that a student can take a year-long course in music theory and, by the end of it, not be able to explain why music uses twelve notes? Smh my head 🤦‍♂️. This article is my attempt to provide an acoustics-based foundation for the twelve-tone system used in AP Music Theory that is regretfully missing from the CollegeBoard's curriculum. If you're currently taking AP Music Theory, I hope that by reading this article you'll gain a deeper appreciation for the 12-tone system and also learn a bit about acoustics along the way!</p>
 
 			<p>You've probably heard of the idea that all sound is just a "wave". If you've seen a diagram of a sound wave, it might've looked something like this:</p>
 
-			<center><img src="assets/12tet/graph1.png" style="width: 40vw;"></center>
+			<center><img src="articles/why-music-has-12-notes/images/graph1.png" style="width: 40vw;"></center>
 
 			<p>The above diagram above shows the relationship between time and air pressure experienced by the listener while a pitch being played. In other words, if you were to play a tone from a speaker or a musical instrument, and then record the air pressure next to the source over time, the relationship would resemble the chart above.</p>
 
@@ -74,7 +75,7 @@
 
 			<p>The properties of sound waves become a lot more interesting when you consider multiple waves played simultaneously. If two different frequencies are being played at the same time, the sound wave perceived by a listener is the sum of the two component graphs. For example, if the frequencies 330 Hz (roughly an E4) and 660 Hz (roughly an E5) are being played, the resulting time-air pressure graph would look something like \(\sin{(330 * 2x\pi)} + \sin{(660 * 2x\pi)}\), where \(x\) is the number of seconds elapsed (the \(2\pi\) is to scale the wavelength so that 330 or 660 periods fit into \(1\) second, rather than \(2\pi\) seconds). On a graph, this would look like:</p>
 
-			<center><img src="assets/12tet/graph2.png" style="width: 40vw;"></center>
+			<center><img src="articles/why-music-has-12-notes/images/graph2.png" style="width: 40vw;"></center>
 
 			<p>To the listener, the resulting pitch won't sound quite like a 330 Hz wave, nor will it sound quite like a 660 Hz wave. Your ears will perceive some of both frequencies. Looking at the waveform, this should make some sense. The absolute peaks and troughs of the wave are occurring on a slower 330 Hz cycle, while there also appears to be a faster waveform on a 660 Hz cycle closer to the vertical center of the graph.</p>
 
@@ -82,7 +83,7 @@
 
 			<center>
 				<audio controls>
-				  <source src="assets/12tet/tone1.wav" type="audio/wav">
+				  <source src="articles/why-music-has-12-notes/sounds/tone1.wav" type="audio/wav">
 					Your browser does not support the audio element.
 				</audio>
 			</center>
@@ -91,14 +92,14 @@
 
 			<center>
 				<audio controls>
-				  <source src="assets/12tet/tone2.wav" type="audio/wav">
+				  <source src="articles/why-music-has-12-notes/sounds/tone2.wav" type="audio/wav">
 					Your browser does not support the audio element.
 				</audio>
 			</center>
 
 			<p>Clearly, this pitch interval sounds a lot "worse" than the 1:2 ratio. But why? We get some insight into this if we look at its waveform:</p>
 
-			<center><img src="assets/12tet/graph3.png" style="width: 40vw;"></center>
+			<center><img src="articles/why-music-has-12-notes/images/graph3.png" style="width: 40vw;"></center>
 
 			<p><i>(note: I've changed the x-axis scale here from the previous graph to show more periods)</i></p>
 
@@ -110,20 +111,20 @@
 
 			<center>
 				<audio controls>
-				  <source src="assets/12tet/tone3.wav" type="audio/wav">
+				  <source src="articles/why-music-has-12-notes/sounds/tone3.wav" type="audio/wav">
 					Your browser does not support the audio element.
 				</audio>
 			</center>
 
 			<p>If you have any background in music theory, you'll immediately recognize that interval as a <a href="https://en.wikipedia.org/wiki/Perfect_fifth">perfect fifth</a>. You might've also recognized the pervious 2:1 ratio as an octave. Much like the octave, the perfect fifth also sounds very stable. Here's its waveform:</p>
 
-			<center><img src="assets/12tet/graph4.png" style="width: 40vw;"></center>
+			<center><img src="articles/why-music-has-12-notes/images/graph4.png" style="width: 40vw;"></center>
 
 			<p>We can clearly see a pattern repeating every 0.006 seconds or so. Let's take a look at another simple integer ratio, 4:3 (330 Hz and 440 Hz in this case):</p>
 
 			<center>
 				<audio controls>
-				  <source src="assets/12tet/tone4.wav" type="audio/wav">
+				  <source src="articles/why-music-has-12-notes/sounds/tone4.wav" type="audio/wav">
 					Your browser does not support the audio element.
 				</audio>
 			</center>
@@ -132,7 +133,7 @@
 
 			<center>
 				<audio controls>
-				  <source src="assets/12tet/tone5.wav" type="audio/wav">
+				  <source src="articles/why-music-has-12-notes/sounds/tone5.wav" type="audio/wav">
 					Your browser does not support the audio element.
 				</audio>
 			</center>
@@ -141,7 +142,7 @@
 
 			<center>
 				<audio controls>
-				  <source src="assets/12tet/tone6.wav" type="audio/wav">
+				  <source src="articles/why-music-has-12-notes/sounds/tone6.wav" type="audio/wav">
 					Your browser does not support the audio element.
 				</audio>
 			</center>
@@ -150,14 +151,14 @@
 
 			<center>
 				<audio controls>
-				  <source src="assets/12tet/tone7.wav" type="audio/wav">
+				  <source src="articles/why-music-has-12-notes/sounds/tone7.wav" type="audio/wav">
 					Your browser does not support the audio element.
 				</audio>
 			</center>
 
 			<p>... a minor third. If you're a musician living in an ancient society before harmony was discovered and you were the first person to discover that these intervals sound good, the next logical step would be to create an instrument to allows you to play all of them. Imagine you have a magical strip of tape that allows you to play any pitch on it within the span of an octave by pressing some position on the tape, where pitches on the right are higher and pitches on the left are lower (kind of like a piano). You can create marks on the instrument to notate which pitches you want to include in your "scale". The instrument might look something like this:</p>
 
-			<center><img src="assets/12tet/instrument.png" style="width: 40vw;"></center>
+			<center><img src="articles/why-music-has-12-notes/images/instrument.png" style="width: 40vw;"></center>
 
 			<p>This is pretty cool -- now you're able to play any of the intervals we discussed relative to the lowest note on the instrument. You can even play major chords on it (330 Hz, 412.5 Hz, and 495 Hz for example). However, our instrument has major limitations. For example, it's impossible to play a major chord with 495 Hz (the fifth) as the root. You'd need to play the frequencies 618.75 Hz (the third from the fifth) and 742.5 Hz (the fifth from the fifth), but neither are accessible on our labelling system.</p>
 
@@ -196,7 +197,7 @@
 
 			<center>
 				<audio controls>
-				  <source src="assets/12tet/tone7.wav" type="audio/wav">
+				  <source src="articles/why-music-has-12-notes/sounds/tone7.wav" type="audio/wav">
 					Your browser does not support the audio element.
 				</audio>
 			</center>
@@ -213,11 +214,11 @@
 			<hr>
 
 
-			<h1> <a id="mandelbrot"> Why the Mandelbrot Set is very cool </a> </h1>
+			<h1> <a id="mandelbrot" style="font-size: 28px;"> Why the Mandelbrot Set is very cool </a> <span style="font-size: 10px;"><a href="articles/why-the-mandelbrot-set-is-very-cool/">View as article</a></span> </h1>
 			<h4> <i>A Beginner's Introduction to Complex Numbers and Fractals</i></h4>
 			<h3> By Gabriel Thompson <span style="font-size: 10px;">January 31, 2022</span> </h3>
 			<p>If you've lived in the world for a moderate amount of time, there's a good chance that you've seen this:</p>
-			<img src="assets/mandelbrot/cover.png"></img>
+			<img src="articles/why-the-mandelbrot-set-is-very-cool/images/cover.png"></img>
 			<p style="font-size: 11px;">Image credit: https://jixta.wordpress.com/2015/04/03/mandelbrot-fractal-in-java/</p>
 			<p>This image is known as the <i>Mandelbrot set</i>, and it's quite possibly the most culturally influential piece of mathematics. But what is it? What is it made of? How is it generated? Why is it so significant?</p>
 			<p> In order to answer all of the above questions, we first need to talk about imaginary and complex numbers.</p>
@@ -239,25 +240,25 @@
 
 			<h3> The complex plane </h3>
 			<p> The last thing that we need to understand before we can understand the Mandelbrot set is something called the complex plane. We typically represent real numbers on a 1-dimensional number line, something like this: </p>
-			<img src="assets/mandelbrot/numberline.png" style="width: 40vw;"></img>
+			<img src="articles/why-the-mandelbrot-set-is-very-cool/images/numberline.png" style="width: 40vw;"></img>
 			<p> The number line is an amazing visual representation of real numbers -- you can easily see if one number is larger than another, or how large the difference between two numbers is. However, it's domain is limited only to real numbers. If you wanted to represent all <i>complex</i> numbers, you would need to use two dimensions, one to represent the real component of a complex number, and one to represent the imaginary component of this complex number. This system of representing numbers is known as the <i> complex plane</i>:</p>
-			<img src="assets/mandelbrot/complexplane.png" style="width: 40vw;"></img>
+			<img src="articles/why-the-mandelbrot-set-is-very-cool/images/complexplane.png" style="width: 40vw;"></img>
 			<p> <i> (Apologies for my Google Drawings-quality diagrams) </i> </p>
 			<p> As you can see above, the complex plane has two axis -- a real axis, and an imaginary axis. The real axis is horizontal, and the imaginary axis is vertical. Any complex number can be represented as a point on the complex plane. For example, in the following diagram, \(3+5i\) is represented as a point on the complex plane: </p>
-			<img src="assets/mandelbrot/complexplane2.png" style="width: 40vw;"></img>
+			<img src="articles/why-the-mandelbrot-set-is-very-cool/images/complexplane2.png" style="width: 40vw;"></img>
 			<p> Any complex number is represented in virtually the same way that one would represent Cartesian coordinates on an xy-plane, by plotting any complex number at the intersection of the vertical perpendicular to the real component and the horizontal perpendicular to the imaginary component. </p>
 
 			<h3> The Mandelbrot set </h3>
 			<p> Now that we understand how complex numbers and the complex plane work, we're finally ready to understand the Mandelbrot set! The mandelbrot set is generated by the following process: For each complex number \(c\), we create a series \(z\), where \(z_0=c\). Then, we calculate each next term of \(z\) through the following formula $$z_{n+1}=z_n^2+c$$ If, as \(n \to \infty\), \(z_n\) continues expanding forever, we consider that point to not be in the Mandelbrot set. If \(z_n\) doesn't expand forever, we say that it is part of the mandelbrot set. </p>
 			<p> That likely made very little sense, so let's look at it in action. We'll let the number \(c = 0.5 + 0.5i\). Then, we'll create a series \(z\), which will be initially equal to \([(0.5+0.5i)]\), or in other words, will have one item, which is equal to \(c\). Then, we'll calculate square of the last number in \(z\), plus the original number \(c\), and this result will be the next item in \(z\). So, the next item in \(z\) will be: $$(0.5+0.5i)^2+(0.5+0.5i)$$ Using complex number multiplication and addition, this simplifies as follows: $$(0.25+0.5i+0.25i^2)+(0.5+0.5i)$$$$(0+0.5i)+(0.5+0.5i)$$$$0.5+i$$ So, the next item of \(z\) is \(0.5+i\). \(z\) is now equal to \([(0.5+0.5i), (0.5+i)]\). To calculate the next item, we run the same process -- calculating the square of the last item of \(z\), plus \(c\) (or plus the first item). So, we would do the following: $$(0.5+i)^2+(0.5+0.5i)$$$$(0.25+i+i^2)+(0.5+0.5i)$$$$(-0.75+i)+(0.5+0.5i)$$$$-0.25+1.5i$$ Here, we have calculated that the next item of \(z\) is \(-0.25+1.5i\), so \(z\) is now equal to \([(0.5+0.5i), (0.5+i), (-0.25+1.5i)]\). If we repeat this process again and again, the next items will be (approximately): $$-1.6875-0.25i$$$$3.285+1.344i$$$$9.487+9.329i$$$$3.468+177.498i$$ It appears that as we repeat this process -- squaring the last number, then adding that to the \(c\) -- the value is growing larger and larger. Indeed, if we continue calculating the next values of \(z\), they will approach infinity. However, this is not true for some other numbers. For example, take \(c=0.1+0.4i\). If we keep on taking the square of the last value and adding it to \(c\), we get the following next terms: $$-0.05+0.48i$$$$-0.128+0.352i$$$$-0.008+0.31i$$$$0.004+0.4i$$$$0.104+0.8i$$$$-0.522+0.565i$$$$0.053-0.19i$$ Interesting! As we keep iterating the recursive formula \(z_{n+1}=z_n^2+c\) where \(c=0.1+0.4i\), the result doesn't appear to be expanding to infinity. </p>
 			<p> So here's the question: for which values of \(c\) does \(z\) expand forever, and for which values of \(c\) does \(z\) stay bounded? Well if, on the complex plane, we color the values of \(c\) where \(z\) does stay bounded in black, and color the values of \(c\) where \(z\) expands to infinity in white, we get the following: </p>
-			<img src="assets/mandelbrot/mandelbrot1.png" style="width: 40vw;"></img>
+			<img src="articles/why-the-mandelbrot-set-is-very-cool/images/mandelbrot1.png" style="width: 40vw;"></img>
 			<p> The image above is essentially a map of which numbers satisfy the property that, when repeatedly squared and added to their original value, do not expand to an infinity. It's certainly not what anyone would've expected. </p>
 			<p> Here's a higher-definition version, that is colored in accordance with how fast each value of \(c\) expands to an infinity: </p>
-			<img src="assets/mandelbrot/mandelbrot2.png" style="width: 40vw;"></img>
+			<img src="articles/why-the-mandelbrot-set-is-very-cool/images/mandelbrot2.png" style="width: 40vw;"></img>
 			<p> All that's being done to generate this image is squaring and adding complex numbers. Maybe you'd expect some form of parabola, or ellipse to be generated. But instead, you get neither. You get a shape that's a sort of cardioid, but bordering other circles on the outside. Off of the circles on the side, there are infinitely spiraling branches. The edge is rough, it never seems to settle. The circle to the left of the main cardioid seems to be connected by an infinitesimally small bridge. </p>
 			<p> The mandelbrot set, however, goes much deeper than what is shown. Zooming into specific parts of the mandelbrot set can yield results like this: </p>
-			<img src="assets/mandelbrot/mandelbrot3.png" style="width: 40vw;"></img>
+			<img src="articles/why-the-mandelbrot-set-is-very-cool/images/mandelbrot3.png" style="width: 40vw;"></img>
 			<p> It's amazing to think that the mandelbrot set is something generated by such a relatively simple equation. The infinite complexity doesn't look like something that a deterministic system could generate. It looks more like a work of art by a mentally-ill ballroom ceiling painter from the Victorian period. I think part of what makes the mandelbrot set so "weird" is that it's unpredictable, but it's not chaotic. It's shape and character vary drastically in different regions, but it's also oddly natural in its shape. There's nothing predictable about the mandelbrot set, but it's all familiar. In fact, you can even find smaller versions of the mandelbrot set that are <i>exactly the same as the original</i>. That's right, the mandelbrot set is even a fractal too! A few of these smaller versions are actually visible in the branches of the above image. </p>
 			<p> When people say that the mandelbrot set is an example of how math can be visually beautiful, I absolutely agree. The mandelbrot set is an amazing shape to explore for hours. In fact, there are plenty of YouTube videos that are just extended zooms into the mandelbrot set, to an absurdly high precision. But I think that describing the mandelbrot set as aesthetically pleasing overshadows the real beauty of it, which is intellectual. It's intellectual beautiful how perfectly deterministic rules can yield such organic and frankly, bizarre, results. </p>
 			<p> The mandelbrot set is not the only fractal generated by a recursive function applied to complex numbers, there's plenty of others. For example, the "Julia Set" is a set of fractals that bear many similarities to the mandelbrot set, including the equation used to generate it; but that's a story for another time. </p>
@@ -267,10 +268,10 @@
 			<hr>
 
 
-			<h1> <a id="hashing"> Long passwords are good, actually </h1>
+			<h1> <a id="hashing" style="font-size: 30px;"> Long passwords are good, actually </a> <span style="font-size: 10px;"><a href="articles/long-passwords-are-good-actually/">View as article</a></span> </h1>
 			<h4> <i> Why Your Passwords are Probably Not Safe: An Oversimplified Explanation </i> </h4>
 			<h3> By Gabriel Thompson <span style="font-size: 10px;">January 17, 2022</span> </h3>
-			<img src="assets/hashing/blender.png" style="width: 70%;"></img>
+			<img src="articles/long-passwords-are-good-actually/images/blender.png" style="width: 70%;"></img>
 			<p style="font-size:11px;"><i>Image credit: https://www.techsolvency.com/passwords/dehashing-reversing-decrypting/</i></p>
 			<p> It would be a massive understatement to call authentication important to computing. With computers storing everything from medical records, to social media posts, to private emails, knowing <i>who</i> is trying to access a piece of data is crucial to any system that stores data. Data leaks, often caused by computers misidentifying who was trying to access a piece of data, can have consequences ranging from minor embarrassments to financial disasters. </p>
 			<p> Because of how important authentication is, computer scientists, companies, and governments have put a lot of effort into creating methods to ensure that only the intended people can access a piece of data. </p>
@@ -278,7 +279,7 @@
 			<h3> Basic passwords </h3>
 			<p> There are many different methods of authentication. Lately, there have been new(er) inventions such as two-factor authentication, or fingerprint authentication. However, the most common (and oldest) of these methods is a <i>password</i> system. The idea behind a password is simple: store the username and corresponding password of each account in a file. Then, when someone logs into the system, prompt them for their username and password. If this password they entered matches the appropriate password listed in the file, allow them in. Otherwise, do not allow them in. </p>
 			<p> The data storing the usernames and passwords would look something like this: </p>
-			<img src="assets/hashing/passwords.png"></img>
+			<center><img src="articles/long-passwords-are-good-actually/images/passwords.png"></img></center>
 			<p> When a user logs in, all the system has to do is compare the password the entered with the password listed under the username they entered in. For example, if the user entered <code>gabriel</code> for the username and <code>password123</code> for the password, they would be let in to the <code>gabriel</code> account. However, if they instead entered <code>gabriel</code> for the username and <code>password124</code> for the password, they would not be let in, as <code>password124</code> does not match <code>password123</code>, the password entry that corresponds to the username <code>gabriel</code>. </p>
 			<p> This system, on its face, seems to work almost perfectly. By guessing random passwords, it would millions, or even billions of guesses to get most passwords. Even if only 64 characters were allowed in passwords (uppercase and lowercase letters, numbers, and underscore and dash), there would already be \(64^5\) (roughly 1 billion) possible passwords of length 5. Because entering an account without knowing its password would require guessing random passwords, it could take up to 1 billion guesses to enter an account with a password length of just 5. And besides, most systems don't allow you to make more than 5 passwords attempts, let alone 1 billion. </p>
 			<p> However, this method has a critical flaw. Gaining access to the file storing the passwords would give you access to not only users' personal information -- but also their passwords, which they more than likely also use for other websites and services. </p>
@@ -297,10 +298,10 @@
 
 			<h3>How SHA-256 applies to authentication</h3>
 			<p>But, what does SHA-256 have to do with passwords and authentication? To answer this, let's revisit our password sheet that an imaginary website could use to store user login information.</p>
-			<img src="assets/hashing/passwords.png"></img>
+			<center><img src="articles/long-passwords-are-good-actually/images/passwords.png"></img></center>
 			<p>This system worked by comparing the password a user enters when logging in, to the password written in the table. The problem with our system was that all of the passwords were written directly in the file. However, what if we instead converted all of the passwords to SHA-256, and stored only the hashed versions of the passwords, rather than the original passwords?</p>
 			<p>Our new password file would be the following:</p>
-			<img src="assets/hashing/hashedpasswords.png"></img>
+			<center><img src="articles/long-passwords-are-good-actually/images/hashedpasswords.png"></img></center>
 			<p>Here, <code>ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f</code> is just <code>password123</code> when passed through SHA-256, and all of the other passwords are just the SHA-256 version of their original values. Now, if a user types in a password, rather than comparing it to the stored password, we can convert the password the user entered through SHA-256, and then compare the resulting hash with the stored hash!</p>
 			<p>Take, for example, the account <code>peterparker</code>, and imagine that the user enters the correct password (<code>justletmein</code>). This entered password will be converted to SHA-256; the output of this will be </p>
 			<center><code>8a72f80b240064a67bfe7376d237a2a125cdd7eefd3320ec0d4803a9bc92b59a</code></center>
